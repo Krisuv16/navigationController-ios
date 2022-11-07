@@ -45,8 +45,22 @@
                     <view key="view" contentMode="scaleToFill" id="cic-vO-9CJ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7i-Bb-vNf">
+                                <rect key="frame" x="116" y="404.66666666666669" width="158" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Navigate to THird"/>
+                                <connections>
+                                    <segue destination="gix-eT-MsE" kind="show" id="5b6-CK-83z"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="WfP-r5-KpL"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="P7i-Bb-vNf" firstAttribute="centerX" secondItem="cic-vO-9CJ" secondAttribute="centerX" id="EwF-P1-1Ka"/>
+                            <constraint firstItem="P7i-Bb-vNf" firstAttribute="centerY" secondItem="cic-vO-9CJ" secondAttribute="centerY" id="oRN-x4-vSE"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vA7-ld-akK"/>
                 </viewController>
@@ -75,8 +89,27 @@
             </objects>
             <point key="canvasLocation" x="136.92307692307691" y="3.5545023696682461"/>
         </scene>
+        <!--Third View Controller-->
+        <scene sceneID="vHB-ok-HkI">
+            <objects>
+                <viewController id="gix-eT-MsE" customClass="ThirdViewController" customModule="navigationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wPg-wV-Ext">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zRg-rq-IZr"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rQX-g7-HnY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tRe-Ez-wiK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2866" y="4"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
